@@ -1,0 +1,22 @@
+/*reset basico*/
+
+/* cor de fundo*/
+body {
+    margin: 0;
+    background-color: lightgray;
+    font-family: Sans-Serif;
+
+}
+
+/* topo*/
+
+.topo {
+    background-color: bisque;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 40px;
+    border: 3px solid darkblue;
+    
+
+}
