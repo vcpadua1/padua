@@ -13,10 +13,68 @@ body {
 .topo {
     background-color: bisque;
     display: flex;
-    justify-content: space-around;
+    justify-content:space-between;
     align-items: center;
     padding: 20px 40px;
     border: 3px solid darkblue;
+    color: #3e7a0d;
+
     
 
 }
+
+/* menu */
+
+.menu { 
+    justify-content:space-around  ; 
+    align-items: center;
+    display: flex;
+    background-color: lightskyblue;
+    font-size: 12px;
+
+}
+
+/* introducao */
+
+h2{ 
+    text-align: center;
+     
+
+}
+
+.conteudo { 
+    text-align: center ;
+    
+    font-family: sans-serif 20pt ;
+    color: indigo;
+
+}
+
+.imagens-livros {
+    justify-content:space-evenly ; 
+    align-items: center;
+    display: flex;
+    
+}
+
+.videos-mapa { 
+     justify-content:space-evenly  ; 
+    align-items: center;
+    display: flex;
+}
+
+table,tr,td,th{
+    margin-left: auto;
+    margin-right: auto;
+    border-style: dotted red; 
+    color:red;
+  
+
+}
+
+td{
+    color: black;
+}
+
+
+
