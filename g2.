@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portal de Notícias</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="topo">
+        <h1>G1</h1>
+    </div>
+
+    <nav>
+        <ul>
+            <li>Brasil</li>
+            <li>Mundo</li>
+            <li>Economia</li>
+            <li>Tecnologia</li>
+            <li>Esportes</li>
+            <li>Entretenimento</li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+<section class="principal">
+
+<div class="noticia-grande">
+<img src="https://via.placeholder.com/800x400">
+<h2>Grande notícia do dia que chama muita atenção</h2>
+<p>Resumo da notícia principal do portal.</p>
+</div>
+
+<div class="noticias-laterais">
+
+<div class="noticia">
+<img src="https://via.placeholder.com/400x200">
+<h3>Notícia importante</h3>
+</div>
+
+<div class="noticia">
+<img src="https://via.placeholder.com/400x200">
+<h3>Outra notícia relevante</h3>
+</div>
+
+</div>
+
+</section>
+
+<section class="grid-noticias">
+
+<div class="card">
+<img src="https://via.placeholder.com/300x150">
+<h4>Notícia 1</h4>
+</div>
+
+<div class="card">
+<img src="https://via.placeholder.com/300x150">
+<h4>Notícia 2</h4>
+</div>
+
+<div class="card">
+<img src="https://via.placeholder.com/300x150">
+<h4>Notícia 3</h4>
+</div>
+
+<div class="card">
+<img src="https://via.placeholder.com/300x150">
+<h4>Notícia 4</h4>
+</div>
+
+</section>
+
+</main>
+
+<footer>
+<p>© 2026 Portal de Notícias</p>
+</footer>
+
+</body>
+</html>
