@@ -1,0 +1,117 @@
+/*reset basico*/
+
+/* cor de fundo*/
+body {
+    margin: 0;
+    background-color: lightgray;
+    font-family: Sans-Serif;
+
+}
+
+/* topo*/
+
+.topo {
+    background-color: bisque;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 20px 40px;
+    border: 3px solid darkblue;
+    color: #3e7a0d;
+
+    
+
+}
+
+/* menu */
+
+.menu { 
+    justify-content:space-around  ; 
+    align-items: center;
+    display: flex;
+    background-color: lightskyblue;
+    font-size: 12px;
+
+}
+
+/* introducao */
+
+h2{ 
+    text-align: center;
+     
+
+}
+
+.conteudo { 
+    text-align: center ;
+    
+    font-family: sans-serif 20pt ;
+    color: indigo;
+
+}
+
+.imagens-livros {
+    justify-content:center ; 
+    gap: 50px;
+    align-items: center;
+    display: flex;
+    
+    
+}
+
+.videos-mapa { 
+     justify-content: center ; 
+     gap: 70px;
+    align-items: center;
+    display: flex;
+   
+}
+
+table,tr,td,th{
+    margin-left: auto;
+    margin-right: auto;
+    border: dashed red; 
+    color:red;
+  
+
+}
+
+td{
+    color: black;
+}
+
+.consulta{
+    background-color: yellow  ;
+    align-items: center;
+    justify-content: center ;
+    display: block;
+   margin-left: auto;
+   margin-right: auto;
+height: 100px;
+   width:400px ;
+   margin-bottom: 1cm;
+   
+
+}
+
+li{ 
+    color:rgb(0, 0, 0);
+    justify-content: center;
+}
+
+.links{ 
+    color: darkred;
+}
+
+.rodapé {
+background-color: bisque;
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin: top ;
+font-size: "comic sans MS "
+
+}
+
+
+
