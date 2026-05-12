@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Editar Carro</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Editar Carro</h1>
+
+        <form action="/atualizar_carro/<%= carro._id %>" method="POST">
+
+            <input type="text" name="marca" value="<%= carro.marca %>">
+
+            <input type="text" name="modelo" value="<%= carro.modelo %>">
+
+            <input type="number" name="ano" value="<%= carro.ano %>">
+
+            <input type="number" name="qtde_disponivel" value="<%= carro.qtde_disponivel %>">
+
+            <button type="submit">
+                Atualizar
+            </button>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>

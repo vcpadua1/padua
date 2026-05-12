@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Carros</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Carros Disponíveis</h1>
+
+        <% carros.forEach(carro=> { %>
+
+            <div class="card">
+
+                <h2>
+                    <%= carro.marca %> - <%= carro.modelo %>
+                </h2>
+
+                <p>Ano: <%= carro.ano %>
+                </p>
+
+                <p>
+                    Quantidade:
+                    <%= carro.qtde_disponivel %>
+                </p>
+
+                <% if(carro.qtde_disponivel==0){ %>
+
+                    <h3>Esgotado</h3>
+
+                    <% } else { %>
+
+                        <a href="/vender_carro/<%= carro._id %>">
+                            <button>Vender</button>
+                        </a>
+
+                        <% } %>
+
+            </div>
+
+            <% }) %>
+
+    </div>
+
+
+    <tr>
+        <td>Carros</td>
+
+        <td>
+            <a href="/carros">
+                Abrir
+            </a>
+        </td>
+    </tr>
+
+
+</body>
+
+</html>

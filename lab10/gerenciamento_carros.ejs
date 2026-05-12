@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Gerenciar Carros</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Gerência de Carros</h1>
+
+        <a href="/cadastrar_carro">
+            <button>Novo Carro</button>
+        </a>
+
+        <% carros.forEach(carro=> { %>
+
+            <div class="card">
+
+                <h2>
+                    <%= carro.marca %> - <%= carro.modelo %>
+                </h2>
+
+                <p>Ano: <%= carro.ano %>
+                </p>
+
+                <p>Quantidade: <%= carro.qtde_disponivel %>
+                </p>
+
+                <a href="/editar_carro/<%= carro._id %>">
+                    <button>Editar</button>
+                </a>
+
+                <a href="/remover_carro/<%= carro._id %>">
+                    <button>Remover</button>
+                </a>
+
+            </div>
+
+            <% }) %>
+
+    </div>
+
+</body>
+
+</html>

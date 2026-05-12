@@ -1,0 +1,70 @@
+body {
+
+    margin: 0;
+    padding: 0;
+
+    background-color: #dbeafe;
+
+    font-family: Arial;
+}
+
+.container {
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    min-height: 100vh;
+}
+
+form {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+
+    width: 400px;
+}
+
+input {
+
+    padding: 10px;
+
+    border-radius: 8px;
+
+    border: 1px solid #999;
+}
+
+button {
+
+    padding: 10px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background-color: #2563eb;
+
+    color: white;
+
+    cursor: pointer;
+}
+
+.card {
+
+    background-color: white;
+
+    padding: 20px;
+
+    margin: 15px;
+
+    border-radius: 10px;
+
+    width: 400px;
+}
