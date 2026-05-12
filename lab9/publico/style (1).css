@@ -1,0 +1,57 @@
+body {
+
+    background-color: #dbeafe;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-direction: column;
+
+    font-family: Arial;
+
+    margin-top: 40px;
+}
+
+.container {
+
+    text-align: center;
+
+    width: 70%;
+}
+
+.post {
+
+    background-color: white;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    margin-bottom: 20px;
+}
+
+button {
+
+    padding: 10px 20px;
+
+    background-color: #2563eb;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+input,
+textarea {
+
+    width: 300px;
+
+    padding: 10px;
+}
