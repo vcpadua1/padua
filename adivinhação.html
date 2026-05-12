@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Jogo de Adivinhação</title>
+
+    <style>
+        /* Cor do fundo da página */
+        body {
+            background-color: #87CEEB;
+            font-family: Arial, sans-serif;
+
+            /* centralização */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Caixa do jogo */
+        #container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            width: 300px;
+        }
+
+        /* input */
+        input {
+            padding: 8px;
+            width: 80px;
+            text-align: center;
+        }
+
+        /* botão */
+        button {
+            padding: 8px 15px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        #resultado {
+            margin-top: 15px;
+            padding: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="container">
+
+        <h2>🎯 Jogo de Adivinhação</h2>
+
+        <p>Digite um número de 1 a 10</p>
+
+        <input type="number" id="numero">
+
+        <br><br>
+
+        <button onclick="verificar()">Verificar</button>
+
+        <p id="resultado"></p>
+
+    </div>
+
+    <script>
+
+        /* número aleatório */
+        let numeroSecreto = Math.floor(Math.random() * 10) + 1;
+
+        function verificar() {
+
+            let numeroUsuario = document.getElementById("numero").value;
+
+            if (numeroUsuario == numeroSecreto) {
+
+                document.getElementById("resultado").innerHTML = "🎉 Você acertou!";
+
+            }
+
+            else if (numeroUsuario > numeroSecreto) {
+
+                document.getElementById("resultado").innerHTML = "📉 O número secreto é menor.";
+
+                document.getElementById("resultado").style.setProperty("background-color", "red");
+
+            }
+
+            else {
+
+                document.getElementById("resultado").innerHTML = "📈 O número secreto é maior.";
+
+                document.getElementById("resultado").style.setProperty("background-color", "red");
+
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>
