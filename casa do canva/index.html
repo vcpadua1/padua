@@ -1,16 +1,210 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <title>Animation</title>
+  <meta charset="UTF-8">
+  <title>Desenhos Canvas</title>
 
-    <link rel="stylesheet" href="estilo.css">
+  <style>
+    body{
+      margin:0;
+      background:#f0f0f0;
+      font-family:Arial, Helvetica, sans-serif;
+
+      display:flex;
+      justify-content:center;
+      align-items:flex-start;
+
+      padding-top:30px;
+    }
+
+    .container{
+      display:flex;
+      gap:40px;
+      align-items:flex-start;
+    }
+
+    canvas{
+      background:white;
+    }
+
+    #quadra{
+      border:1px solid black;
+    }
+  </style>
 </head>
+
 <body>
 
-<canvas id="canvas" width="300" height="300"></canvas>
+<div class="container">
 
-<script src="java.js"></script>
+  <canvas id="quadra" width="300" height="300"></canvas>
+
+  <canvas id="paisagem" width="400" height="400"></canvas>
+
+</div>
+
+<script>
+
+  // =========================
+  // PRIMEIRO DESENHO
+  // =========================
+
+  const quadra = document.getElementById("quadra");
+  const q = quadra.getContext("2d");
+
+  q.fillStyle = "white";
+  q.fillRect(0,0,300,300);
+
+  q.font = "20px Arial";
+  q.fillStyle = "#222";
+  q.fillText("Canvas",110,50);
+
+  q.strokeStyle = "green";
+  q.lineWidth = 1;
+
+  q.beginPath();
+  q.moveTo(0,150);
+  q.lineTo(300,150);
+  q.stroke();
+
+  q.beginPath();
+  q.moveTo(150,150);
+  q.lineTo(150,300);
+  q.stroke();
+
+  q.beginPath();
+  q.arc(150,150,60,Math.PI,0);
+  q.stroke();
+
+  q.beginPath();
+  q.arc(150,150,80,Math.PI,0);
+  q.stroke();
+
+  q.beginPath();
+  q.arc(150,300,80,Math.PI,0);
+  q.stroke();
+
+  q.beginPath();
+  q.arc(150,300,40,Math.PI,0);
+  q.stroke();
+
+  q.strokeStyle = "blue";
+  q.beginPath();
+  q.moveTo(50,50);
+  q.lineTo(150,150);
+  q.stroke();
+
+  q.strokeStyle = "red";
+  q.beginPath();
+  q.moveTo(250,50);
+  q.lineTo(150,150);
+  q.stroke();
+
+  q.fillStyle = "blue";
+  q.fillRect(0,0,50,50);
+
+  q.fillStyle = "red";
+  q.fillRect(250,0,50,50);
+  q.fillRect(110,150,40,40);
+
+  q.fillStyle = "cyan";
+  q.fillRect(0,120,30,60);
+  q.fillRect(270,135,30,30);
+
+  q.fillStyle = "yellow";
+  q.fillRect(0,240,30,60);
+  q.fillRect(30,270,30,30);
+
+  q.fillStyle = "black";
+  q.fillRect(270,240,30,60);
+  q.fillRect(240,270,30,30);
+
+  q.fillStyle = "cyan";
+  q.beginPath();
+  q.arc(150,115,15,0,Math.PI*2);
+  q.fill();
+
+  q.strokeStyle = "blue";
+  q.stroke();
+
+  q.fillStyle = "yellow";
+  q.beginPath();
+  q.arc(70,220,15,0,Math.PI*2);
+  q.fill();
+
+  q.strokeStyle = "green";
+  q.stroke();
+
+  q.beginPath();
+  q.arc(220,220,15,0,Math.PI*2);
+  q.fill();
+  q.stroke();
+
+  q.fillStyle = "cyan";
+  q.beginPath();
+  q.arc(150,300,40,Math.PI,0);
+  q.fill();
+
+
+
+  // =========================
+  // SEGUNDO DESENHO
+  // =========================
+
+  const paisagem = document.getElementById("paisagem");
+  const p = paisagem.getContext("2d");
+
+  p.fillStyle = "aquamarine";
+  p.fillRect(0,0,400,400);
+
+  p.fillStyle = "yellow";
+  p.beginPath();
+  p.arc(300,100,50,0,Math.PI*2);
+  p.fill();
+
+  p.fillStyle = "gray";
+  p.fillRect(50,300,350,100);
+
+  p.fillStyle = "royalblue";
+  p.beginPath();
+  p.arc(0,350,100,Math.PI*1.5,Math.PI*2);
+  p.lineTo(200,400);
+  p.lineTo(0,400);
+  p.fill();
+
+  p.fillStyle = "saddlebrown";
+  p.fillRect(50,240,20,60);
+  p.fillRect(350,285,25,65);
+
+  p.fillStyle = "forestgreen";
+
+  p.beginPath();
+  p.arc(60,230,30,0,Math.PI*2);
+  p.fill();
+
+  p.beginPath();
+  p.arc(360,280,30,0,Math.PI*2);
+  p.fill();
+
+  p.fillStyle = "saddlebrown";
+  p.fillRect(150,200,100,100);
+
+  p.fillStyle = "tomato";
+  p.beginPath();
+  p.moveTo(150,200);
+  p.lineTo(200,150);
+  p.lineTo(250,200);
+  p.closePath();
+  p.fill();
+
+  p.fillStyle = "#4fc3f7";
+  p.fillRect(160,220,30,30);
+  p.fillRect(210,220,30,30);
+
+  p.fillStyle = "#8b4513";
+  p.fillRect(190,250,30,50);
+
+</script>
 
 </body>
 </html>
