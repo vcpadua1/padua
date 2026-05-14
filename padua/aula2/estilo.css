@@ -1,102 +1,114 @@
-/* RESET BÁSICO */
-* {
+/* RESET */
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* FUNDO GERAL */
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #667eea, #764ba2);
-    color: #333;
+/* FUNDO */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #00d9ff, #0099cc);
     min-height: 100vh;
 }
 
-/* MENU DE NAVEGAÇÃO */
-nav {
-    background-color: rgba(0, 0, 0, 0.8);
-    padding: 15px 0;
-}
-
-.menu {
-    list-style: none;
+/* MENU */
+#menu{
+    background-color: #001f4d;
+    padding: 20px;
     text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
-.menu li {
-    display: inline-block;
-    margin: 0 20px;
-}
-
-.menu a {
-    color: #ffffff;
+/* LINKS DO MENU */
+#menu a{
+    color: white;
     text-decoration: none;
+    margin: 0 25px;
+    font-size: 20px;
     font-weight: bold;
-    font-size: 18px;
-    transition: 0.3s ease;
+    transition: 0.3s;
+    padding: 10px 18px;
+    border-radius: 8px;
 }
 
-/* PSEUDO-CLASSE */
-.menu a:hover {
-    color: #00f7ff;
-    text-shadow: 0 0 8px #00f7ff;
+/* HOVER */
+#menu a:hover{
+    background-color: cyan;
+    color: #001f4d;
 }
 
-/* TÍTULOS */
-h1 {
+/* CONTAINER */
+.container{
+    width: 85%;
+    max-width: 1000px;
+    margin: 50px auto;
+    background-color: rgba(255,255,255,0.15);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
     text-align: center;
-    margin: 40px 0;
-    color: #ffffff;
-    font-size: 36px;
 }
 
-/* CONTEÚDO */
-.conteudo {
-    background-color: white;
-    width: 70%;
-    margin: 0 auto;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-    text-align: center;
+/* TITULO */
+h1{
+    color: white;
+    font-size: 42px;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+}
+
+/* TEXTO */
+.texto{
+    color: white;
+    font-size: 22px;
+    margin-top: 10px;
 }
 
 /* TABELA */
-#tabela-projetos {
-    width: 70%;
-    margin: 30px auto;
+table{
+    width: 100%;
     border-collapse: collapse;
-    background-color: white;
-    border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
 }
 
-#tabela-projetos th {
-    background-color: #4b0082;
+/* CABEÇALHO */
+th{
+    background-color: #001f4d;
     color: white;
-    padding: 15px;
+    padding: 18px;
+    font-size: 22px;
+    border: 3px solid #003b8f;
+}
+
+/* CÉLULAS */
+td{
+    padding: 18px;
     font-size: 18px;
+    color: black;
+    border: 3px solid #003b8f;
 }
 
-#tabela-projetos td {
-    padding: 12px;
-    border-bottom: 1px solid #ddd;
-}
-
-#tabela-projetos a {
-    color: #667eea;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-/* PSEUDO-CLASSE NA TABELA */
-#tabela-projetos tr:hover {
-    background-color: #f2f2f2;
+/* EFEITO NAS LINHAS */
+tr:hover{
+    background-color: #dff9ff;
     transition: 0.3s;
 }
 
-#tabela-projetos a:hover {
-    color: #764ba2;
+/* LINK DO PROJETO */
+.linkProjeto{
+    color: #001f4d;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* HOVER DO LINK */
+.linkProjeto:hover{
+    color: #00aaff;
+    text-decoration: underline;
 }
